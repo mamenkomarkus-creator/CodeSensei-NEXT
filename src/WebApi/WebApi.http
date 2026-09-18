@@ -1,0 +1,30 @@
+@WebApi_HostAddress = http://localhost:5001
+@token = secret123
+
+### Health
+GET {{WebApi_HostAddress}}/health
+
+### Preset (VRChat)
+GET {{WebApi_HostAddress}}/api/preset/1?k={{token}}
+
+### Submit code-review for VR ticket
+POST {{WebApi_HostAddress}}/api/code/submit
+Content-Type: application/json
+
+{
+  "code": "class Student { public string Name; }",
+  "language": "csharp",
+  "ticketCode": "7K3MP"
+}
+
+### Inbox (VRChat)
+GET {{WebApi_HostAddress}}/api/inbox?room=metalab&k={{token}}
+
+### Ask (legacy)
+POST {{WebApi_HostAddress}}/api/ask?k={{token}}
+Content-Type: application/json
+
+{
+  "code": "int x = 0;",
+  "language": "csharp"
+}
