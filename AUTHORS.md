@@ -2,10 +2,8 @@
 
 | Name | Ім’я | Role |
 | --- | --- | --- |
-| Mark Mamenko | Маменко Марк | Team lead, backend (.NET, Gemini, Render) |
-| Kateryna Shozda | Шозда Катерина | Learning design, OOP presets, mentor prompts |
-| Denys Ilienko | Ільєнко Денис | QA, tests, API contract |
-| Sviatoslav Pavlenko | Павленко Святослав | VRChat client, UdonSharp, prefab |
-| Dmytro Poshytyniuk | Пошитнюк Дмитро | MetaLab world, VRChat SDK |
-
-Created artefacts remain the intellectual property of the authors listed above.
+| Mark Mamenko | Маменко Марк | Backend / Team Lead — Clean Architecture, .NET proxy, LLM API |
+| Sviatoslav Pavlenko | Павленко Святослав | UdonSharp Developer — terminal UI, VRChat client |
+| Denys Ilienko | Ільєнко Денис | AI / Prompt Engineer — system prompts, OOP context |
+| Kateryna Shozda | Шозда Катерина | QA / C# Tester — NUnit, parsing, backend stability |
+| Dmytro Poshytyniuk | Пошитнюк Дмитро | Integration / VR Tester — Unity prefab, VRChat HTTP checks |

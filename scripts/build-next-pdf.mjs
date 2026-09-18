@@ -11,61 +11,80 @@ const PURPLE = rgb(0.361, 0.247, 0.89);
 const BLACK = rgb(0.07, 0.07, 0.09);
 const MUTED = rgb(0.28, 0.28, 0.32);
 const WHITE = rgb(1, 1, 1);
+const CARD = rgb(0.97, 0.97, 0.99);
 
 const copy = {
   en: {
-    nomination: "Nomination I  —  Virtual university location",
+    title: "CodeSensei",
+    subtitle: "Interactive AI Mentor for a Metaverse Laboratory",
+    nomination: "Nomination II  —  Interactive AI application",
     teamLine: "Team CodeSensei",
     university: "Igor Sikorsky Kyiv Polytechnic Institute",
     membersLabel: "Team members",
     members: [
-      "Mark Mamenko, Kateryna Shozda, Denys Ilienko,",
-      "Sviatoslav Pavlenko, Dmytro Poshytyniuk",
+      "Mark Mamenko, Sviatoslav Pavlenko, Denys Ilienko,",
+      "Kateryna Shozda, Dmytro Poshytyniuk",
     ],
     faculty: "Igor Sikorsky KPI",
     role: "Role in the project",
     people1: [
-      ["Mark Mamenko", "Team lead. Secure .NET proxy, Gemini mentor API, Render deployment."],
-      ["Kateryna Shozda", "Learning design. 24 OOP presets and VR-sized mentor prompts."],
-      ["Denys Ilienko", "Quality assurance. NUnit suite, HTTP contract, demo checklist."],
+      ["Mark Mamenko", "Backend / Team Lead. Clean Architecture, memory-aware .NET proxy, Gemini LLM integration."],
+      ["Sviatoslav Pavlenko", "UdonSharp Developer. Interactive terminal UI and GET-only VRChat networking."],
+      ["Denys Ilienko", "AI / Prompt Engineer. System prompts and OOP context so answers stay useful in VR."],
     ],
     people2: [
-      ["Sviatoslav Pavlenko", "VRChat client. UdonSharp terminal, GET-only networking, prefab."],
-      ["Dmytro Poshytyniuk", "World integration. MetaLab scene, VRChat SDK, placement in the lab."],
-      ["Authorship", "Created artefacts remain the intellectual property of the team."],
+      ["Kateryna Shozda", "QA / C# Tester. NUnit suite (AAA), parsing logic and backend stability."],
+      ["Dmytro Poshytyniuk", "Integration / VR Tester. Prefab assembly in Unity and HTTP checks inside VRChat."],
     ],
-    continued: "Continued on the next slide.",
-    teamNote: "Five authors. Artefacts stay with the team.",
-    locKicker: "SELECTED LOCATION",
+    workflowTitle: "How we work",
+    workflow:
+      "Agile team of five. Unity client and .NET API in parallel, synced over Git. Cross-platform stack (Rider, macOS).",
+    ideaTitle: "Idea and goal",
+    ideaKicker: "THE PROBLEM",
+    ideaName: "No mentor in the VR lab",
+    ideaUni: "Department MetaLab on VRChat  ·  NEXT-Study Metaverse",
+    ideaBody:
+      "CodeSensei is an NPC-style AI assistant at a virtual terminal. Students get OOP explanations, help writing code, and instant feedback without leaving VR — a stand-in for a consulting teacher during remote practice.",
+    goalsKicker: "PROJECT GOALS",
+    goals: [
+      "• UdonSharp (C#) client inside VRChat",
+      "• Secure .NET proxy to the LLM API",
+      "• Presence of a teacher in MetaLab",
+      "• Clean Architecture + DDD for later scale",
+      "• Unity package any NEXT world can import",
+    ],
+    locTitle: "Selected Location",
+    locKicker: "HOST ENVIRONMENT",
     locName: "MacPaw AI Lab / MetaLab classroom",
     locUni: "Igor Sikorsky Kyiv Polytechnic Institute",
     locBody:
-      "This is the university multimedia classroom modelled for the NEXT Metaverse: blue-and-white walls, herringbone floor, orange seminar seating, whiteboards and a lounge of bean-bags. The MacPaw AI Lab graphic on the end wall marks the space as a live digital-skills studio.",
-    scopeKicker: "MODELLED SCOPE",
+      "The application lives in the department’s virtual laboratory on VRChat: seminar rows, critique boards and an informal lounge. The terminal sits at a workstation so the mentor is present in the same room as the class.",
+    scopeKicker: "WHAT VISITORS DO",
     scope: [
-      "• Seminar rows and group tables",
-      "• Informal bean-bag lounge",
-      "• Whiteboard / critique zone",
-      "• CodeSensei terminal at a workstation",
-      "• Shared wall for OOP presets",
-      "• Circulation to the adjacent bay",
+      "• Open one of 24 OOP presets",
+      "• Start a live code review",
+      "• Paste a snippet via /paste",
+      "• Read the mentor on the VR screen",
+      "• Share the same synced answer",
     ],
-    artNames: ["Classroom model", "Informal lounge", "CodeSensei station"],
+    modelTitle: "Application in MetaLab",
+    artTitle: "Digital Artefacts",
+    artNames: ["UdonSharp terminal", "Paste + ticket flow", "Clean Architecture API"],
     artCaps: [
-      "Full 3D reconstruction of the KPI / MacPaw AI Lab for VRChat.",
-      "Bean-bag zone for informal coaching and peer discussion.",
-      "Digital artefact: UdonSharp terminal + Gemini mentor in this room.",
+      "Unity prefab: UI terminal, presets and GET-only VRCStringDownloader for VRChat SDK3.",
+      "Five-character ticket, public /paste form, inbox the prefab already polls.",
+      "Protected .NET proxy to Gemini. Keys never enter the game client. NUnit on the domain.",
     ],
     tech: [
-      ["Tools and software", "Unity, VRChat SDK3, UdonSharp, C# / .NET 10, ASP.NET, Docker, Render, Google Gemini, GitHub, NUnit."],
-      ["Development process", "1) Capture the laboratory in 3D. 2) Align a GET-only VRChat contract. 3) Ship the mentor API and 24 OOP presets. 4) Package the terminal prefab for MetaLab."],
-      ["VRChat integration", "VRCStringDownloader only. HTTPS host codesensei-d5zi.onrender.com. Players enable Allow Untrusted URLs. Requests respect the 5.5 s VRChat limit."],
-      ["Technical challenges", "Udon cannot POST, so review uses a 5-character ticket + /paste + inbox. Pending tickets stay hidden. Render Free is woken via /health."],
+      ["Tools and software", ".NET (C#) Clean Architecture proxy · UdonSharp / VRChat SDK3 · Unity prefab · Google Gemini (LLM analog of OpenAI API) · System.Text.Json · NUnit (AAA) · Docker / Render · Git."],
+      ["Development process", "1) Split Unity client and API. 2) Lock a GET-only VRChat contract. 3) Isolate the LLM behind prompts and a proxy. 4) Cover the backend with NUnit. 5) Ship CodeSensei.unitypackage for MetaLab."],
+      ["VRChat integration", "HTTPS host codesensei-d5zi.onrender.com. VRCStringDownloader only (Udon cannot POST). Allow Untrusted URLs. Polling ≥ 5.5 s. Ticket + /paste + inbox for reviews."],
+      ["Technical challenges", "POST is impossible from Udon, so reviews use a 5-character ticket. Pending tickets stay out of the inbox. Render Free is woken via /health. Answers wrap to 55 characters for the VR screen."],
     ],
     next: [
-      ["Educational use", "In the NEXT-Study Metaverse students sit in this laboratory, open OOP presets or start a live code review. Teachers see the same synced answer on the shared terminal."],
-      ["User experience", "Walk the seminar rows and lounge, press a preset, or generate a ticket, paste a snippet on the web form, and read a mentor reply wrapped to 55 characters for the VR screen."],
-      ["Further development", "Place the prefab at a workstation in this mesh, persist tickets, add languages, and publish the VRChat world after MetaLab import."],
+      ["Educational use", "In NEXT-Study Metaverse a student stands at the MetaLab terminal, opens an OOP topic or submits a snippet, and receives mentor feedback as if a consulting teacher were in the room. The same text is synced for the group."],
+      ["User experience", "Walk the laboratory, press a preset, or generate a ticket, paste code on the web form, and read a formatted reply on the shared VR terminal. Keys never leave the server."],
+      ["Further development", "Drop the prefab into other NEXT worlds, persist tickets, swap the LLM provider (architecture already isolates it), add languages, and keep the NUnit safety net."],
     ],
     demo: "Project demo",
     materials: "Project materials",
@@ -73,66 +92,84 @@ const copy = {
     matLines: [
       "GitHub: github.com/mamenkomarkus-creator/CodeSensei-NEXT",
       "Prefab: client/CodeSensei.unitypackage",
-      "Docs: docs/SUBMISSION.md, docs/api.md, docs/NEXT-INTEGRATION.md",
+      "Docs: docs/SUBMISSION.md · docs/api.md · docs/NEXT-INTEGRATION.md",
     ],
     extraLines: [
       "VRChat: hello.vrchat.com     NEXT: nextstudy.eu",
-      "Authorship of created artefacts remains with the team.",
+      "Live API: codesensei-d5zi.onrender.com/paste",
     ],
   },
   uk: {
-    nomination: "Номінація I  —  Віртуальна локація університету",
+    title: "CodeSensei",
+    subtitle: "Інтерактивний AI-ментор для Metaverse-лабораторії",
+    nomination: "Номінація II  —  Інтерактивний ШІ-застосунок",
     teamLine: "Команда CodeSensei",
     university: "КПІ ім. Ігоря Сікорського",
     membersLabel: "Учасники команди",
     members: [
-      "Маменко Марк, Шозда Катерина, Ільєнко Денис,",
-      "Павленко Святослав, Пошитнюк Дмитро",
+      "Маменко Марк, Павленко Святослав, Ільєнко Денис,",
+      "Шозда Катерина, Пошитнюк Дмитро",
     ],
     faculty: "КПІ ім. Ігоря Сікорського",
     role: "Роль у проєкті",
     people1: [
-      ["Маменко Марк", "Керівник. Безпечний .NET-проксі, Gemini API, деплой на Render."],
-      ["Шозда Катерина", "Навчальний дизайн. 24 пресети ООП і промпти під VR-екран."],
-      ["Ільєнко Денис", "Якість. NUnit, HTTP-контракт, чекліст демо."],
+      ["Маменко Марк", "Backend / Team Lead. Clean Architecture, оптимізація .NET-проксі, інтеграція Gemini."],
+      ["Павленко Святослав", "UdonSharp Developer. Інтерактивний UI-термінал і GET-only мережа VRChat."],
+      ["Ільєнко Денис", "AI / Prompt Engineer. Системні промпти й контекст ООП для відповідей у VR."],
     ],
     people2: [
-      ["Павленко Святослав", "Клієнт VRChat. UdonSharp-термінал, лише GET, префаб."],
-      ["Пошитнюк Дмитро", "Інтеграція світу. Сцена MetaLab, VRChat SDK, розміщення."],
-      ["Авторство", "Створені артефакти залишаються інтелектуальною власністю команди."],
+      ["Шозда Катерина", "QA / C# Tester. NUnit (AAA), логіка парсингу та стабільність бекенду."],
+      ["Пошитнюк Дмитро", "Integration / VR Tester. Збірка префаба в Unity та перевірка HTTP у VRChat."],
     ],
-    continued: "Продовження на наступному слайді.",
-    teamNote: "П’ятеро авторів. Права на артефакти — за командою.",
-    locKicker: "ОБРАНА ЛОКАЦІЯ",
+    workflowTitle: "Як працюємо",
+    workflow:
+      "Agile-команда з п’яти осіб. Клієнт Unity і API .NET паралельно, синхрон через Git. Кросплатформний стек (Rider, macOS).",
+    ideaTitle: "Ідея та мета",
+    ideaKicker: "ПРОБЛЕМА",
+    ideaName: "Немає ментора в VR-лабораторії",
+    ideaUni: "Віртуальна лабораторія кафедри (MetaLab)  ·  метавсесвіт NEXT-Study",
+    ideaBody:
+      "CodeSensei — ШІ-асистент у вигляді NPC біля віртуального термінала. Студенти отримують пояснення ООП, допомогу в коді та миттєвий зворотний зв’язок, не виходячи з VR — ефект присутності викладача-консультанта під час дистанційної практики.",
+    goalsKicker: "МЕТА ПРОЄКТУ",
+    goals: [
+      "• Клієнт UdonSharp (C#) всередині VRChat",
+      "• Захищений .NET-проксі до LLM API",
+      "• Присутність викладача в MetaLab",
+      "• Clean Architecture + DDD для масштабу",
+      "• Unity-пакет, який імпортує будь-який світ NEXT",
+    ],
+    locTitle: "Обрана локація",
+    locKicker: "СЕРЕДОВИЩЕ",
     locName: "Аудиторія MacPaw AI Lab / MetaLab",
     locUni: "КПІ ім. Ігоря Сікорського",
     locBody:
-      "Це мультимедійна аудиторія університету, змодельована для метавсесвіту NEXT: синьо-білі стіни, ялинкова підлога, помаранчеві семінарні місця, білі дошки і зона пуфів. Графіка MacPaw AI Lab на торцевій стіні позначає простір як студію цифрових навичок.",
-    scopeKicker: "МЕЖІ МОДЕЛІ",
+      "Застосунок живе у віртуальній лабораторії кафедри на VRChat: семінарські ряди, дошки критики, неформальна зона. Термінал стоїть на робочому місці, тож ментор присутній у тій самій залі, що й група.",
+    scopeKicker: "ЩО РОБИТЬ ВІДВІДУВАЧ",
     scope: [
-      "• Ряди семінарських столів",
-      "• Неформальна зона з пуфами",
-      "• Зона дошок / критики",
-      "• Термінал CodeSensei на робочому місці",
-      "• Спільна стіна пресетів ООП",
-      "• Прохід до суміжного відсіку",
+      "• Відкрити один із 24 пресетів ООП",
+      "• Запустити живе код-рев’ю",
+      "• Вставити фрагмент через /paste",
+      "• Прочитати ментора на VR-екрані",
+      "• Бачити ту саму синхронізовану відповідь",
     ],
-    artNames: ["Модель аудиторії", "Неформальна зона", "Станція CodeSensei"],
+    modelTitle: "Застосунок у MetaLab",
+    artTitle: "Цифрові артефакти",
+    artNames: ["UdonSharp-термінал", "Потік /paste + квиток", "API Clean Architecture"],
     artCaps: [
-      "Повна 3D-реконструкція лабораторії KPI / MacPaw AI Lab для VRChat.",
-      "Зона пуфів для неформального коучингу та обговорень.",
-      "Цифровий артефакт: UdonSharp-термінал + ментор Gemini в цій залі.",
+      "Unity-префаб: UI-термінал, пресети і лише GET через VRCStringDownloader для VRChat SDK3.",
+      "Квиток з 5 символів, публічна форма /paste, inbox, який уже опитує префаб.",
+      "Захищений .NET-проксі до Gemini. Ключі не потрапляють у клієнт гри. NUnit на домені.",
     ],
     tech: [
-      ["Інструменти", "Unity, VRChat SDK3, UdonSharp, C# / .NET 10, ASP.NET, Docker, Render, Google Gemini, GitHub, NUnit."],
-      ["Процес розробки", "1) Зняти лабораторію в 3D. 2) Вирівняти GET-only контракт VRChat. 3) Зібрати API ментора і 24 пресети ООП. 4) Запакувати префаб термінала для MetaLab."],
-      ["Інтеграція VRChat", "Лише VRCStringDownloader. HTTPS-хост codesensei-d5zi.onrender.com. Гравці вмикають Allow Untrusted URLs. Запити не частіше ніж раз на 5.5 с."],
-      ["Технічні виклики", "Udon не вміє POST, тому рев’ю йде через квиток з 5 символів + /paste + inbox. Pending не показуємо. Render Free будимо через /health."],
+      ["Інструменти", ".NET (C#) проксі за Clean Architecture · UdonSharp / VRChat SDK3 · Unity-префаб · Google Gemini (аналог OpenAI API) · System.Text.Json · NUnit (AAA) · Docker / Render · Git."],
+      ["Процес розробки", "1) Розділити клієнт Unity і API. 2) Зафіксувати GET-only контракт VRChat. 3) Ізолювати LLM за промптами й проксі. 4) Покрити бекенд NUnit. 5) Віддати CodeSensei.unitypackage для MetaLab."],
+      ["Інтеграція VRChat", "HTTPS-хост codesensei-d5zi.onrender.com. Лише VRCStringDownloader (Udon не вміє POST). Allow Untrusted URLs. Опитування ≥ 5.5 с. Рев’ю: квиток + /paste + inbox."],
+      ["Технічні виклики", "POST з Udon неможливий, тому рев’ю йде через 5-символьний квиток. Pending не показуємо в inbox. Render Free будимо через /health. Відповіді — до 55 символів на рядок VR-екрана."],
     ],
     next: [
-      ["Освітнє використання", "У метавсесвіті NEXT-Study студенти сидять у цій лабораторії, відкривають пресети ООП або запускають живе код-рев’ю. Викладач бачить ту саму синхронізовану відповідь."],
-      ["Досвід відвідувача", "Пройти ряди й зону пуфів, натиснути пресет або згенерувати код, вставити фрагмент на вебформі й прочитати відповідь ментора (до 55 символів у рядку VR-екрана)."],
-      ["Подальший розвиток", "Поставити префаб на робоче місце в цій моделі, зберегти тікети, додати мови й опублікувати світ VRChat після імпорту в MetaLab."],
+      ["Освітнє використання", "У метавсесвіті NEXT-Study студент підходить до термінала MetaLab, відкриває тему ООП або надсилає фрагмент і отримує зворотний зв’язок ментора — як від викладача-консультанта в залі. Текст синхронізується для групи."],
+      ["Досвід відвідувача", "Пройти лабораторію, натиснути пресет або згенерувати квиток, вставити код на вебформі й прочитати відповідь на спільному VR-терміналі. Ключі лишаються на сервері."],
+      ["Подальший розвиток", "Поставити префаб в інші світи NEXT, зберегти тікети, змінити LLM-провайдера (архітектура вже ізолює його), додати мови й тримати сітку NUnit."],
     ],
     demo: "Демо проєкту",
     materials: "Матеріали проєкту",
@@ -140,11 +177,11 @@ const copy = {
     matLines: [
       "GitHub: github.com/mamenkomarkus-creator/CodeSensei-NEXT",
       "Префаб: client/CodeSensei.unitypackage",
-      "Документи: docs/SUBMISSION.md, docs/api.md, docs/NEXT-INTEGRATION.md",
+      "Документи: docs/SUBMISSION.md · docs/api.md · docs/NEXT-INTEGRATION.md",
     ],
     extraLines: [
       "VRChat: hello.vrchat.com     NEXT: nextstudy.eu",
-      "Авторство створених артефактів залишається за командою.",
+      "Живе API: codesensei-d5zi.onrender.com/paste",
     ],
   },
 };
@@ -203,6 +240,7 @@ async function build(lang, outFile) {
   const labDir = path.join(root, "docs/presentation/lab");
   const qrGitPath = path.join(root, "docs/presentation/qr-github.png");
   const qrPastePath = path.join(root, "docs/presentation/qr-paste.png");
+  const pastePath = path.join(root, "docs/presentation/paste-demo.png");
 
   const pdf = await PDFDocument.create();
   pdf.registerFontkit(fontkit);
@@ -220,29 +258,14 @@ async function build(lang, outFile) {
     await pdf.embedJpg(fs.readFileSync(path.join(labDir, "03-adjacent-bay.jpg"))),
     await pdf.embedJpg(fs.readFileSync(path.join(labDir, "04-seminar.jpg"))),
   ];
+  const pasteImg = await pdf.embedPng(fs.readFileSync(pastePath));
   const qrGit = await pdf.embedPng(fs.readFileSync(qrGitPath));
   const qrPaste = await pdf.embedPng(fs.readFileSync(qrPastePath));
 
-  const p0 = pdf.getPage(0);
-  cover(p0, 22, 20, 640, 410);
-  p0.drawText("CodeSensei", { x: 26, y: 390, size: 36, font: arialBd, color: PURPLE });
-  p0.drawText(t.nomination, { x: 26, y: 348, size: lang === "uk" ? 14 : 16, font: arialBd, color: BLACK });
-  p0.drawText(t.teamLine, { x: 26, y: 312, size: 18, font: arial, color: BLACK });
-  p0.drawText(t.university, { x: 26, y: 288, size: 14, font: arial, color: MUTED });
-  p0.drawText(t.membersLabel, { x: 26, y: 248, size: 16, font: arialBd, color: BLACK });
-  drawLines(p0, arial, t.members, { x: 26, yTop: 238, size: 14, color: BLACK, maxWidth: 560 });
-
-  function teamCard(page, x, name, role) {
-    cover(page, x, 46, 250, 230);
-    page.drawText(name, { x: x + 8, y: 240, size: 12, font: arialBd, color: BLACK });
-    page.drawText(t.faculty, { x: x + 8, y: 222, size: 10, font: arial, color: MUTED });
-    page.drawText(t.role, { x: x + 8, y: 196, size: 11, font: arialBd, color: BLACK });
-    drawLines(page, arial, [role], { x: x + 8, yTop: 184, size: 11, color: BLACK, maxWidth: 232, gap: 1.3 });
-  }
-  const teamTitle = lang === "uk" ? "Наша команда" : "Our Team";
   function setTitle(page, title) {
-    cover(page, 16, 448, 640, 90, WHITE);
-    page.drawText(title, { x: 26, y: 505, size: 28, font: arialBd, color: PURPLE });
+    cover(page, 16, 448, 760, 90, WHITE);
+    const size = arialBd.widthOfTextAtSize(title, 26) > 700 ? 20 : 26;
+    page.drawText(title, { x: 26, y: 505, size, font: arialBd, color: PURPLE });
   }
   function setPageNo(page, n) {
     cover(page, 868, 6, 82, 26, WHITE);
@@ -250,59 +273,88 @@ async function build(lang, outFile) {
     const w = arial.widthOfTextAtSize(s, 10);
     page.drawText(s, { x: 938 - w, y: 16, size: 10, font: arial, color: MUTED });
   }
+  function teamCard(page, x, name, role) {
+    page.drawRectangle({ x, y: 46, width: 250, height: 230, color: CARD });
+    page.drawRectangle({ x, y: 46, width: 5, height: 230, color: PURPLE });
+    page.drawText(name, { x: x + 16, y: 240, size: 12, font: arialBd, color: BLACK });
+    page.drawText(t.faculty, { x: x + 16, y: 222, size: 10, font: arial, color: MUTED });
+    page.drawText(t.role, { x: x + 16, y: 196, size: 11, font: arialBd, color: BLACK });
+    drawLines(page, arial, [role], { x: x + 16, yTop: 184, size: 11, color: BLACK, maxWidth: 220, gap: 1.3 });
+  }
+  function infoCard(page, x, title, body) {
+    page.drawRectangle({ x, y: 46, width: 250, height: 230, color: CARD });
+    page.drawRectangle({ x, y: 46, width: 5, height: 230, color: PURPLE });
+    page.drawText(title, { x: x + 16, y: 240, size: 12, font: arialBd, color: BLACK });
+    drawLines(page, arial, [body], { x: x + 16, yTop: 214, size: 11, color: BLACK, maxWidth: 220, gap: 1.3 });
+  }
+
+  const p0 = pdf.getPage(0);
+  cover(p0, 22, 20, 640, 410);
+  p0.drawText(t.title, { x: 26, y: 392, size: 36, font: arialBd, color: PURPLE });
+  drawLines(p0, arial, [t.subtitle], { x: 26, yTop: 372, size: 13, color: MUTED, maxWidth: 560, gap: 1.25 });
+  p0.drawText(t.nomination, { x: 26, y: 318, size: lang === "uk" ? 13 : 15, font: arialBd, color: BLACK });
+  p0.drawText(t.teamLine, { x: 26, y: 286, size: 16, font: arial, color: BLACK });
+  p0.drawText(t.university, { x: 26, y: 264, size: 13, font: arial, color: MUTED });
+  p0.drawText(t.membersLabel, { x: 26, y: 226, size: 15, font: arialBd, color: BLACK });
+  drawLines(p0, arial, t.members, { x: 26, yTop: 216, size: 13, color: BLACK, maxWidth: 560 });
 
   const p1 = pdf.getPage(1);
   wipeBody(p1);
-  setTitle(p1, teamTitle);
-  cover(p1, 24, 14, 540, 28);
+  setTitle(p1, lang === "uk" ? "Наша команда" : "Our Team");
   teamCard(p1, 54, t.people1[0][0], t.people1[0][1]);
   teamCard(p1, 354, t.people1[1][0], t.people1[1][1]);
   teamCard(p1, 654, t.people1[2][0], t.people1[2][1]);
-  p1.drawText(t.continued, { x: 26, y: 22, size: 10, font: arial, color: MUTED });
+  cover(p1, 10, 6, 850, 38, WHITE);
 
   const p2 = pdf.getPage(2);
   wipeBody(p2);
-  setTitle(p2, teamTitle);
+  setTitle(p2, lang === "uk" ? "Наша команда" : "Our Team");
   teamCard(p2, 54, t.people2[0][0], t.people2[0][1]);
   teamCard(p2, 354, t.people2[1][0], t.people2[1][1]);
-  teamCard(p2, 654, t.people2[2][0], t.people2[2][1]);
-  cover(p2, 24, 14, 640, 28);
-  p2.drawText(t.teamNote, { x: 26, y: 22, size: 10, font: arial, color: MUTED });
+  infoCard(p2, 654, t.workflowTitle, t.workflow);
+  cover(p2, 10, 6, 850, 38, WHITE);
 
   const p3 = pdf.getPage(3);
   wipeBody(p3);
-  p3.drawText(t.locKicker, { x: 48, y: 410, size: 11, font: arialBd, color: PURPLE });
-  p3.drawText(t.locName, { x: 48, y: 386, size: lang === "uk" ? 14 : 16, font: arialBd, color: BLACK });
-  p3.drawText(t.locUni, { x: 48, y: 368, size: 11, font: arial, color: MUTED });
-  drawLines(p3, arial, [t.locBody], { x: 48, yTop: 350, size: 12, color: BLACK, maxWidth: 400, gap: 1.35 });
-  p3.drawText(t.scopeKicker, { x: 500, y: 410, size: 11, font: arialBd, color: PURPLE });
-  drawLines(p3, arial, t.scope, { x: 500, yTop: 392, size: 12, color: BLACK, maxWidth: 400, gap: 1.45 });
+  setTitle(p3, t.ideaTitle);
+  p3.drawText(t.ideaKicker, { x: 48, y: 410, size: 11, font: arialBd, color: PURPLE });
+  p3.drawText(t.ideaName, { x: 48, y: 386, size: lang === "uk" ? 14 : 16, font: arialBd, color: BLACK });
+  p3.drawText(t.ideaUni, { x: 48, y: 368, size: 10, font: arial, color: MUTED });
+  drawLines(p3, arial, [t.ideaBody], { x: 48, yTop: 348, size: 12, color: BLACK, maxWidth: 400, gap: 1.35 });
+  p3.drawText(t.goalsKicker, { x: 500, y: 410, size: 11, font: arialBd, color: PURPLE });
+  drawLines(p3, arial, t.goals, { x: 500, yTop: 392, size: 12, color: BLACK, maxWidth: 400, gap: 1.45 });
 
   const p4 = pdf.getPage(4);
   wipeBody(p4);
-  fitImage(p4, imgs[0], 28, 42, 560, 370);
-  fitImage(p4, imgs[1], 600, 220, 328, 192);
-  fitImage(p4, imgs[3], 600, 42, 328, 168);
+  setTitle(p4, t.locTitle);
+  p4.drawText(t.locName, { x: 36, y: 420, size: 12, font: arialBd, color: BLACK });
+  drawLines(p4, arial, [t.locBody], { x: 36, yTop: 414, size: 10, color: MUTED, maxWidth: 900, gap: 1.2 });
+  fitImage(p4, imgs[0], 28, 42, 560, 318);
+  fitImage(p4, imgs[1], 600, 206, 328, 154);
+  fitImage(p4, imgs[3], 600, 42, 328, 154);
 
   const p5 = pdf.getPage(5);
   wipeBody(p5);
+  setTitle(p5, t.modelTitle);
   fitImage(p5, imgs[2], 28, 42, 450, 370);
   fitImage(p5, imgs[3], 490, 42, 440, 370);
 
   const p6 = pdf.getPage(6);
   wipeBody(p6);
-  p6.drawText(t.artNames[0], { x: 34, y: 404, size: 13, font: arialBd, color: BLACK });
-  p6.drawText(t.artNames[1], { x: 352, y: 404, size: 13, font: arialBd, color: BLACK });
-  p6.drawText(t.artNames[2], { x: 670, y: 404, size: 13, font: arialBd, color: BLACK });
+  setTitle(p6, t.artTitle);
+  p6.drawText(t.artNames[0], { x: 34, y: 404, size: 12, font: arialBd, color: BLACK });
+  p6.drawText(t.artNames[1], { x: 352, y: 404, size: 12, font: arialBd, color: BLACK });
+  p6.drawText(t.artNames[2], { x: 670, y: 404, size: 12, font: arialBd, color: BLACK });
   fitImage(p6, imgs[0], 18, 136, 292, 252);
-  fitImage(p6, imgs[1], 332, 136, 292, 252);
+  fitImage(p6, pasteImg, 332, 136, 292, 252);
   fitImage(p6, imgs[2], 648, 136, 292, 252);
-  drawLines(p6, arial, [t.artCaps[0]], { x: 20, yTop: 100, size: 9, color: BLACK, maxWidth: 288, gap: 1.25 });
-  drawLines(p6, arial, [t.artCaps[1]], { x: 336, yTop: 100, size: 9, color: BLACK, maxWidth: 288, gap: 1.25 });
-  drawLines(p6, arial, [t.artCaps[2]], { x: 652, yTop: 100, size: 9, color: BLACK, maxWidth: 288, gap: 1.25 });
+  drawLines(p6, arial, [t.artCaps[0]], { x: 20, yTop: 128, size: 9, color: BLACK, maxWidth: 288, gap: 1.22 });
+  drawLines(p6, arial, [t.artCaps[1]], { x: 336, yTop: 128, size: 9, color: BLACK, maxWidth: 288, gap: 1.22 });
+  drawLines(p6, arial, [t.artCaps[2]], { x: 652, yTop: 128, size: 9, color: BLACK, maxWidth: 288, gap: 1.22 });
 
   const p7 = pdf.getPage(7);
   wipeBody(p7);
+  setTitle(p7, lang === "uk" ? "Технічна реалізація" : "Technical Implementation");
   let y = 420;
   for (const [title, body] of t.tech) {
     p7.drawText(title, { x: 36, y, size: 13, font: arialBd, color: PURPLE });
@@ -311,6 +363,7 @@ async function build(lang, outFile) {
 
   const p8 = pdf.getPage(8);
   wipeBody(p8);
+  setTitle(p8, lang === "uk" ? "Інтеграція в метавсесвіт NEXT-Study" : "Integration into NEXT-Study Metaverse");
   y = 420;
   for (const [title, body] of t.next) {
     p8.drawText(title, { x: 36, y, size: 13, font: arialBd, color: PURPLE });
@@ -319,6 +372,7 @@ async function build(lang, outFile) {
 
   const p9 = pdf.getPage(9);
   wipeBody(p9);
+  setTitle(p9, lang === "uk" ? "Демо та матеріали проєкту" : "Demo and Project Materials");
   p9.drawText(t.demo, { x: 36, y: 410, size: 13, font: arialBd, color: PURPLE });
   drawLines(p9, arial, ["https://codesensei-d5zi.onrender.com/paste", "https://codesensei-d5zi.onrender.com/health"], {
     x: 36,
@@ -335,7 +389,7 @@ async function build(lang, outFile) {
   p9.drawText("GitHub", { x: 722, y: 236, size: 9, font: arial, color: MUTED });
   p9.drawImage(qrPaste, { x: 810, y: 250, width: 88, height: 88 });
   p9.drawText("Demo", { x: 836, y: 236, size: 9, font: arial, color: MUTED });
-  fitImage(p9, imgs[0], 700, 58, 198, 160);
+  fitImage(p9, pasteImg, 700, 48, 198, 170);
 
   if (lang === "uk") {
     const p10 = pdf.getPage(10);

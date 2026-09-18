@@ -1,27 +1,29 @@
 # Integrating CodeSensei into NEXT-Study Metaverse / VRChat
 
-Created artefacts remain the intellectual property of the team. Erasmus+ NEXT may use them for education.
+Ukrainian: `docs/NEXT-INTEGRATION.md`
+
+**Nomination II.** An NPC-style AI mentor in the department MetaLab.
 
 ## Team
 
 | Member | Role |
 | --- | --- |
-| Mark Mamenko (Маменко Марк) | Team lead, backend (.NET, Gemini, Render) |
-| Kateryna Shozda (Шозда Катерина) | Learning design, OOP presets, mentor prompts |
-| Denys Ilienko (Ільєнко Денис) | QA, tests, API contract, demo checklist |
-| Sviatoslav Pavlenko (Павленко Святослав) | VRChat client, UdonSharp, terminal prefab |
-| Dmytro Poshytyniuk (Пошитнюк Дмитро) | MetaLab world, VRChat SDK, placement |
+| Mark Mamenko (Маменко Марк) | Backend / Team Lead |
+| Sviatoslav Pavlenko (Павленко Святослав) | UdonSharp Developer |
+| Denys Ilienko (Ільєнко Денис) | AI / Prompt Engineer |
+| Kateryna Shozda (Шозда Катерина) | QA / C# Tester |
+| Dmytro Poshytyniuk (Пошитнюк Дмитро) | Integration / VR Tester |
 
-## Location
+## Environment
 
-3D reconstruction of the **MacPaw AI Lab / MetaLab** classroom at Igor Sikorsky KPI. Photos: `docs/presentation/lab/`.
+Place the app in **MacPaw AI Lab / MetaLab** (KPI) on VRChat.
 
 - Unity + **VRChat SDK3 Worlds** + **UdonSharp**
-- Network **GET only** (`VRCStringDownloader`) — Udon cannot POST
+- Network **GET only** (`VRCStringDownloader`)
 - Request interval ≥ **5.5 s**
-- HTTPS baked into the prefab: `https://codesensei-d5zi.onrender.com`
-- VRChat client: **Settings → Security → Allow Untrusted URLs**
-- Platforms: PC / PCVR. Quest depends on the MetaLab world
+- HTTPS in the prefab: `https://codesensei-d5zi.onrender.com`
+- VRChat: **Settings → Security → Allow Untrusted URLs**
+- Platforms: PC / PCVR
 
 https://hello.vrchat.com/
 
@@ -30,12 +32,12 @@ https://hello.vrchat.com/
 1. Open the MetaLab world in Unity (VRChat SDK3 + UdonSharp).
 2. `Assets → Import Package → Custom Package…` → `client/CodeSensei.unitypackage`.
 3. If Git scripts are newer, copy `client/Scripts/*.cs` over the imported files.
-4. Drag `CodeSensei_Terminal` onto a workstation in the classroom.
+4. Drag `CodeSensei_Terminal` onto a workstation.
 5. Set `Ticket Timeout Seconds = 180`.
 6. Build & Upload.
-7. Before a demo, open https://codesensei-d5zi.onrender.com/health to wake Render.
+7. Before a demo, open https://codesensei-d5zi.onrender.com/health.
 
-Details: `client/README.md`. HTTP contract: `docs/api.md`.
+Details: `client/README.md`. HTTP: `docs/api.md`.
 
 ## Live links
 
@@ -51,5 +53,5 @@ Details: `client/README.md`. HTTP contract: `docs/api.md`.
 ## Metaverse checks
 
 1. Preset 1–24 → lines on the terminal.
-2. Code review → 5-character ticket → `/paste` → mentor reply on screen.
+2. Code review → 5-character ticket → `/paste` → mentor reply.
 3. A second player sees the same synced answer.

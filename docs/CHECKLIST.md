@@ -1,14 +1,13 @@
 # Чекліст перед здачею
 
+- [x] Номінація II (інтерактивний ШІ-застосунок)
 - [x] Публічний репозиторій https://github.com/mamenkomarkus-creator/CodeSensei-NEXT
-- [x] П’ятеро авторів у README, AUTHORS, інтеграції та слайдах
-- [x] Презентація на офіційному шаблоні NEXT, PDF UK + EN
-- [x] Фото реальної 3D-лабораторії (не згенерований інтер’єр)
-- [x] Префаб `client/CodeSensei.unitypackage` + скрипти
-- [x] API-контракт GET-only для VRChat
+- [x] П’ятеро учасників і ролі з проєктної теорії
+- [x] Презентація на шаблоні NEXT, PDF UK + EN
+- [x] Префаб `client/CodeSensei.unitypackage` + скрипти UdonSharp
+- [x] .NET-проксі, Clean Architecture, Gemini (аналог OpenAI API)
+- [x] GET-only контракт VRChat (`VRCStringDownloader`)
 - [x] Живий хост `/paste` і `/health`
-- [x] Тести `dotnet test` (NUnit)
-- [x] Авторство артефактів за командою
-- [ ] Імпорт префаба в Unity MetaLab (робить учасник зі SDK)
+- [x] Тести `dotnet test` (NUnit, AAA)
+- [ ] Імпорт префаба в Unity MetaLab (учасник зі SDK)
 - [ ] Прогін у живому світі VRChat
-- [ ] Keep-alive Action: вставити `ops/keep-render-awake.yml` у GitHub UI
