@@ -1,41 +1,42 @@
-# CodeSensei — NEXT Student Creative Project
+# CodeSensei
 
-VR-ментор з ООП у змодельованій лабораторії **MacPaw AI Lab / MetaLab** (KPI) для VRChat і NEXT-Study Metaverse.
+**Посилання на здачу:** https://github.com/mamenkomarkus-creator/CodeSensei-NEXT
 
-**Презентація (PDF, шаблон NEXT):** [docs/presentation/CodeSensei-NEXT.pdf](docs/presentation/CodeSensei-NEXT.pdf)  
-**Інтеграція:** [docs/NEXT-INTEGRATION.md](docs/NEXT-INTEGRATION.md)  
-**Живе демо:** https://codesensei-d5zi.onrender.com/paste  
-**Health:** https://codesensei-d5zi.onrender.com/health
+VR-ментор з ООП у змодельованій лабораторії MacPaw AI Lab / MetaLab (КПІ) для VRChat і метавсесвіту NEXT-Study.
 
 Авторство створених артефактів залишається за командою.
 
+| | |
+| --- | --- |
+| Презентація UK | [docs/presentation/CodeSensei-NEXT-UK.pdf](docs/presentation/CodeSensei-NEXT-UK.pdf) |
+| Презентація EN | [docs/presentation/CodeSensei-NEXT-EN.pdf](docs/presentation/CodeSensei-NEXT-EN.pdf) |
+| Як здавати пакет | [docs/SUBMISSION.md](docs/SUBMISSION.md) · [EN](docs/SUBMISSION.en.md) |
+| Чекліст | [docs/CHECKLIST.md](docs/CHECKLIST.md) |
+| Інтеграція в VRChat / MetaLab | [docs/NEXT-INTEGRATION.md](docs/NEXT-INTEGRATION.md) · [EN](docs/NEXT-INTEGRATION.en.md) |
+| API | [docs/api.md](docs/api.md) · [EN](docs/api.en.md) |
+| Демо | https://codesensei-d5zi.onrender.com/paste |
+| Health | https://codesensei-d5zi.onrender.com/health |
+
 ## Команда
 
-| Учасник | Роль |
+| Учасник | Role |
 | --- | --- |
-| Маменко Марк | Team lead, backend (.NET, Gemini, Render) |
-| Шозда Катерина | Learning design, пресети ООП, промпти |
-| Ільєнко Денис | QA, тести, контракт API |
-| Павленко Свʼятослав | VRChat-клієнт, UdonSharp, префаб |
-| Пошитнюк Дмитро | Збірка MetaLab, VRChat SDK |
+| Маменко Марк / Mark Mamenko | Team lead, backend |
+| Шозда Катерина / Kateryna Shozda | Learning design |
+| Ільєнко Денис / Denys Ilienko | QA |
+| Павленко Святослав / Sviatoslav Pavlenko | VRChat / UdonSharp |
+| Пошитнюк Дмитро / Dmytro Poshytyniuk | MetaLab / VRChat SDK |
 
-## Що в цьому репозиторії
+## English
 
-Один коміт — повне рішення:
+Submission URL: https://github.com/mamenkomarkus-creator/CodeSensei-NEXT
 
-- 3D-лабораторія (фото моделі) + префаб термінала VRChat
-- .NET API (Gemini) на Render
-- PDF-презентація за офіційним шаблоном Erasmus+ NEXT
-- Документація для вставки у світ MetaLab
+CodeSensei is an OOP mentor inside a reconstructed KPI multimedia classroom for VRChat and the Erasmus+ NEXT metaverse. Presentations (official NEXT template): UK and EN PDFs in `docs/presentation/`. Integration: `docs/NEXT-INTEGRATION.en.md`. Authorship of artefacts remains with the team.
 
-Сумісність: Unity, VRChat SDK3, UdonSharp, лише GET (`VRCStringDownloader`), HTTPS, Allow Untrusted URLs.
-
-## Швидкий старт
+Compat: Unity, VRChat SDK3, UdonSharp, GET-only `VRCStringDownloader`, HTTPS, Allow Untrusted URLs.
 
 ```bash
-cp .env.example .env   # Gemini__ApiKey
+cp .env.example .env   # set Gemini__ApiKey
 dotnet test
 dotnet run --project src/WebApi
 ```
-
-Імпорт у MetaLab: `client/README.md`.

@@ -1,5 +1,7 @@
 # CodeSensei Backend API
 
+English: `docs/api.en.md`. Submission: https://github.com/mamenkomarkus-creator/CodeSensei-NEXT
+
 Бекенд — захищений проксі між VRChat-клієнтом (учасник B) і Google Gemini.
 Контракт сумісний з префабом `CodeSensei.unitypackage` (GET-only `VRCStringDownloader`).
 

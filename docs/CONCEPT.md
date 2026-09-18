@@ -1,0 +1,9 @@
+# Concept statement
+
+## English (max 250 words)
+
+CodeSensei is a virtual OOP mentor placed inside a reconstructed university multimedia classroom — the MacPaw AI Lab / MetaLab at Igor Sikorsky KPI — for the Erasmus+ NEXT Study metaverse on VRChat. The 3D space keeps the real laboratory’s language: blue-and-white walls, orange seminar seating, whiteboards, herringbone floor and a bean-bag lounge. In that room a student does not only look at furniture; they press one of 24 OOP presets or start a live code review. Because VRChat Udon cannot POST, the review uses a five-character ticket shown on the terminal, a public /paste page, and a GET inbox the prefab already polls. A .NET service on Render proxies Google Gemini, formats answers to 55-character VR lines, and never puts pending tickets in the inbox so the client does not stop too early. Teachers see the same synced text. Authorship of the model, prefab, API and teaching content remains with the student team; NEXT may use the pack for education.
+
+## Українською (до 250 слів)
+
+CodeSensei — віртуальний ментор з ООП у реконструйованій мультимедійній аудиторії MacPaw AI Lab / MetaLab КПІ ім. Ігоря Сікорського для метавсесвіту Erasmus+ NEXT на VRChat. Простір зберігає мову реальної лабораторії: синьо-білі стіни, помаранчеві місця, дошки, ялинкова підлога, зона пуфів. Студент не лише оглядає меблі: натискає один із 24 пресетів ООП або запускає живе код-рев’ю. Udon у VRChat не вміє POST, тому рев’ю йде через п’ятисимвольний код на терміналі, сторінку /paste і GET-inbox, який уже опитує префаб. Сервіс .NET на Render проксує Google Gemini, форматує відповідь під 55 символів рядка VR і не кладе pending у inbox, щоб клієнт не зупиняв опитування. Викладач бачить той самий синхронізований текст. Авторство моделі, префаба, API і навчального змісту залишається за студентською командою; NEXT може використовувати пакет в освітніх цілях.

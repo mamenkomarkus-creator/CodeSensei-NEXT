@@ -1,5 +1,7 @@
 # Інтеграція CodeSensei в NEXT-Study Metaverse / VRChat
 
+English: `docs/NEXT-INTEGRATION.en.md`
+
 Артефакти команди залишаються авторською власністю учасників. Ліцензія на використання в середовищі NEXT — для освітніх цілей проєкту Erasmus+ NEXT.
 
 ## Команда
@@ -41,8 +43,9 @@
 
 | Ресурс | URL |
 | --- | --- |
-| Репозиторій | https://github.com/mamenkomarkus-creator/CodeSensei |
-| Презентація NEXT | `docs/presentation/CodeSensei-NEXT-presentation.pptx` |
+| Репозиторій (здача) | https://github.com/mamenkomarkus-creator/CodeSensei-NEXT |
+| Презентація UK | `docs/presentation/CodeSensei-NEXT-UK.pdf` |
+| Презентація EN | `docs/presentation/CodeSensei-NEXT-EN.pdf` |
 | Демо /paste | https://codesensei-d5zi.onrender.com/paste |
 | Health | https://codesensei-d5zi.onrender.com/health |
 | NEXT project | https://nextstudy.eu/ |

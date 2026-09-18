@@ -415,6 +415,8 @@ loclx.zip
 # In-repo copy that GitHub will accept: ops/keep-render-awake.yml
 .github/workflows/keep-render-awake.yml
 
+docs/presentation/_qa/
+
 
 ##
 ## Visual studio for Mac
