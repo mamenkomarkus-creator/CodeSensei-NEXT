@@ -22,15 +22,15 @@ const copy = {
     university: "Igor Sikorsky Kyiv Polytechnic Institute",
     membersLabel: "Team members",
     members: [
-      "Mark Mamenko, Sviatoslav Pavlenko, Denys Ilienko,",
+      "Denys Ilienko, Mark Mamenko, Sviatoslav Pavlenko,",
       "Kateryna Shozda, Dmytro Poshytyniuk",
     ],
     faculty: "Igor Sikorsky KPI",
     role: "Role in the project",
     people1: [
-      ["Mark Mamenko", "Backend / Team Lead. Clean Architecture, memory-aware .NET proxy, Gemini LLM integration."],
+      ["Denys Ilienko", "Team Lead / AI & Prompt Engineer. Vision, system prompts and OOP context for VR."],
+      ["Mark Mamenko", "Backend. Clean Architecture, memory-aware .NET proxy, Gemini LLM integration."],
       ["Sviatoslav Pavlenko", "UdonSharp Developer. Interactive terminal UI and GET-only VRChat networking."],
-      ["Denys Ilienko", "AI / Prompt Engineer. System prompts and OOP context so answers stay useful in VR."],
     ],
     people2: [
       ["Kateryna Shozda", "QA / C# Tester. NUnit suite (AAA), parsing logic and backend stability."],
@@ -92,7 +92,7 @@ const copy = {
     matLines: [
       "GitHub: github.com/mamenkomarkus-creator/CodeSensei-NEXT",
       "Prefab: client/CodeSensei.unitypackage",
-      "Docs: docs/SUBMISSION.md · docs/api.md · docs/NEXT-INTEGRATION.md",
+      "Docs: docs/README.md · docs/CONCEPT.md · docs/api.md",
     ],
     extraLines: [
       "VRChat: hello.vrchat.com     NEXT: nextstudy.eu",
@@ -107,15 +107,15 @@ const copy = {
     university: "КПІ ім. Ігоря Сікорського",
     membersLabel: "Учасники команди",
     members: [
-      "Маменко Марк, Павленко Святослав, Ільєнко Денис,",
+      "Ільєнко Денис, Маменко Марк, Павленко Святослав,",
       "Шозда Катерина, Пошитнюк Дмитро",
     ],
     faculty: "КПІ ім. Ігоря Сікорського",
     role: "Роль у проєкті",
     people1: [
-      ["Маменко Марк", "Backend / Team Lead. Clean Architecture, оптимізація .NET-проксі, інтеграція Gemini."],
+      ["Ільєнко Денис", "Team Lead / AI & Prompt Engineer. Бачення проєкту, системні промпти й контекст ООП для VR."],
+      ["Маменко Марк", "Backend. Clean Architecture, оптимізація .NET-проксі, інтеграція Gemini."],
       ["Павленко Святослав", "UdonSharp Developer. Інтерактивний UI-термінал і GET-only мережа VRChat."],
-      ["Ільєнко Денис", "AI / Prompt Engineer. Системні промпти й контекст ООП для відповідей у VR."],
     ],
     people2: [
       ["Шозда Катерина", "QA / C# Tester. NUnit (AAA), логіка парсингу та стабільність бекенду."],
@@ -177,7 +177,7 @@ const copy = {
     matLines: [
       "GitHub: github.com/mamenkomarkus-creator/CodeSensei-NEXT",
       "Префаб: client/CodeSensei.unitypackage",
-      "Документи: docs/SUBMISSION.md · docs/api.md · docs/NEXT-INTEGRATION.md",
+      "Документи: docs/README.md · docs/CONCEPT.md · docs/api.md",
     ],
     extraLines: [
       "VRChat: hello.vrchat.com     NEXT: nextstudy.eu",

@@ -1,16 +1,18 @@
-# CodeSensei submission pack (NEXT)
+# Submission pack
 
-Send this repository:
+Send the jury this repository:
 
-https://github.com/mamenkomarkus-creator/CodeSensei-NEXT
+**https://github.com/mamenkomarkus-creator/CodeSensei-NEXT**
 
-**Nomination II** — interactive AI application.
+Nomination II · interactive AI application · team lead Denys Ilienko.
 
-## Open first
+## Read in this order
 
-1. English slides: `docs/presentation/CodeSensei-NEXT-EN.pdf`
-2. Ukrainian slides: `docs/presentation/CodeSensei-NEXT-UK.pdf`
-3. Concept: `docs/CONCEPT.md`
-4. Integration: `docs/NEXT-INTEGRATION.en.md`
-5. Live demo: https://codesensei-d5zi.onrender.com/paste  
-   Wake the free host first: https://codesensei-d5zi.onrender.com/health
+1. English slides — `docs/presentation/CodeSensei-NEXT-EN.pdf`
+2. Ukrainian slides — `docs/presentation/CodeSensei-NEXT-UK.pdf`
+3. Concept — [CONCEPT.md](CONCEPT.md)
+4. Integration — [NEXT-INTEGRATION.en.md](NEXT-INTEGRATION.en.md)
+5. Demo — https://codesensei-d5zi.onrender.com/paste  
+   Wake the host first if needed: https://codesensei-d5zi.onrender.com/health
+
+Defence script: [DEMO.md](DEMO.md).

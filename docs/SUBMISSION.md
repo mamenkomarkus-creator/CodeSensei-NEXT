@@ -1,34 +1,30 @@
-# Здача пакета CodeSensei (NEXT)
+# Пакет здачі
 
-Надішли комісії **це** посилання:
+Надішліть комісії одне посилання:
 
-https://github.com/mamenkomarkus-creator/CodeSensei-NEXT
+**https://github.com/mamenkomarkus-creator/CodeSensei-NEXT**
 
-**Номінація II** — інтерактивний ШІ-застосунок.
+Номінація II · інтерактивний ШІ-застосунок · тімлід Ільєнко Денис.
 
-## Що відкрити першим
+## Порядок ознайомлення
 
-1. Презентація українською: `docs/presentation/CodeSensei-NEXT-UK.pdf`
-2. Презентація англійською: `docs/presentation/CodeSensei-NEXT-EN.pdf`
-3. Ідея / мета: `docs/CONCEPT.md`
-4. Інтеграція: `docs/NEXT-INTEGRATION.md`
-5. Живе демо: https://codesensei-d5zi.onrender.com/paste  
-   Якщо довго думає — спочатку https://codesensei-d5zi.onrender.com/health
+1. Презентація українською — `docs/presentation/CodeSensei-NEXT-UK.pdf`
+2. Презентація англійською — `docs/presentation/CodeSensei-NEXT-EN.pdf`
+3. Ідея — [CONCEPT.md](CONCEPT.md)
+4. Інтеграція — [NEXT-INTEGRATION.md](NEXT-INTEGRATION.md)
+5. Демо — https://codesensei-d5zi.onrender.com/paste  
+   Якщо відповідь довга, спочатку відкрийте https://codesensei-d5zi.onrender.com/health (безкоштовний Render прокидається).
 
-## Склад здачі
+## Що входить до здачі
 
-| Артефакт | Де лежить |
+| Артефакт | Розташування |
 | --- | --- |
-| Презентація NEXT (PDF, UK + EN) | `docs/presentation/` |
+| Презентації NEXT (PDF, UK + EN) | `docs/presentation/` |
 | Префаб VRChat | `client/CodeSensei.unitypackage` |
 | Скрипти UdonSharp | `client/Scripts/` |
-| Бекенд .NET + NUnit | `src/`, `tests/` |
-| Контракт API | `docs/api.md` |
-| Інтеграція MetaLab | `docs/NEXT-INTEGRATION.md` |
+| Бекенд .NET і тести NUnit | `src/`, `tests/` |
+| Документація | цей каталог `docs/` |
 
-## Демо на захисті (3–5 хв)
+## Захист
 
-1. Відкрити `/health`, дочекатися `status: running`.
-2. У VRChat: Allow Untrusted URLs.
-3. Пресет 1–24 → текст на терміналі.
-4. Код-рев’ю → 5 символів → `/paste` → відповідь ментора.
+Сценарій на 3–5 хвилин: [DEMO.md](DEMO.md).

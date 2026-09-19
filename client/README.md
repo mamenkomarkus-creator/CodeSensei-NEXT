@@ -1,24 +1,28 @@
-# Клієнт VRChat (учасник B / збірка E)
+# Клієнт VRChat
 
-Готовий термінал CodeSensei для Unity + VRChat SDK3.
+Термінал CodeSensei для Unity і VRChat SDK3. Повна інтеграція світу: [docs/NEXT-INTEGRATION.md](../docs/NEXT-INTEGRATION.md).
 
 ## Що імпортувати
 
-`CodeSensei.unitypackage` — префаб `Assets/CodeSensei_Terminal.prefab` і UdonSharp-скрипти.
+`CodeSensei.unitypackage` містить префаб `Assets/CodeSensei_Terminal.prefab` і скрипти UdonSharp.
 
-`Scripts/` у цьому репо — та сама логіка, щоб її було видно в Git. Після імпорту пакета **підміни скрипти з `client/Scripts/`**, якщо дата файлів у Git новіша: там inbox приймає лише `completed`/`error`, таймаут код-рев'ю 3 хвилини.
+Каталог `Scripts/` у Git — та сама логіка для рев’ю. Після імпорту пакета скопіюйте ці файли поверх імпортованих, якщо вони новіші: inbox приймає лише `completed` і `error`, таймаут рев’ю — 3 хвилини.
 
-## Як додати в MetaLab
+## Розміщення в MetaLab
 
-1. Відкрий світ MetaLab у Unity з VRChat SDK3 і UdonSharp.
-2. `Assets → Import Package → Custom Package…` → `client/CodeSensei.unitypackage`.
-3. Якщо в Git оновлені `Scripts/*.cs` — скопіюй їх поверх імпортованих у `Assets/`.
-4. Перетягни префаб `CodeSensei_Terminal` на сцену біля робочого місця.
-5. На компоненті термінала вистав `Ticket Timeout Seconds = 180`, якщо інспектор показує 120.
-6. URLs уже прошиті: `https://codesensei-d5zi.onrender.com` і токен `secret123`.
-7. Збірка → Upload світу.
-8. У VRChat: **Settings → Security → Allow Untrusted URLs**.
-9. Перед заходом на демо відкрий https://codesensei-d5zi.onrender.com/health (розбудити Render).
-10. Перевір пресет-кнопку, потім код-рев'ю: код з термінала → https://codesensei-d5zi.onrender.com/paste.
+1. Відкрийте світ MetaLab у Unity (VRChat SDK3 + UdonSharp).
+2. **Assets → Import Package → Custom Package…** → `client/CodeSensei.unitypackage`.
+3. За потреби оновіть скрипти з `client/Scripts/`.
+4. Перетягніть `CodeSensei_Terminal` на робоче місце.
+5. Виставте **Ticket Timeout Seconds = 180**.
+6. Адреси вже прошиті: `https://codesensei-d5zi.onrender.com`, токен `secret123`.
+7. Зберіть і завантажте світ.
+8. У VRChat увімкніть **Settings → Security → Allow Untrusted URLs**.
+9. Перед демо відкрийте https://codesensei-d5zi.onrender.com/health.
+10. Перевірте пресет, потім рев’ю: код з термінала → https://codesensei-d5zi.onrender.com/paste.
 
-Не відкривай префаб «для правок бекенда». URL змінює лише той, хто збирає світ, і тільки якщо зміниться хост.
+URL змінює лише той, хто збирає світ, і лише якщо зміниться хост.
+
+## English
+
+Import `CodeSensei.unitypackage`, overlay newer `Scripts/` if needed, place `CodeSensei_Terminal` at a workstation, set ticket timeout to 180 seconds, enable **Allow Untrusted URLs**, and wake `/health` before the demo.

@@ -1,10 +1,11 @@
-# NEXT presentation
+# Презентації NEXT
 
-Official Erasmus+ NEXT template, filled as PDF (UK + EN) for **Nomination II**.
+Офіційний шаблон Erasmus+ NEXT Student Creative Project Competition. Номінація II. Формат PDF — відкривається в Preview, Acrobat і PowerPoint.
 
-| File | Language |
+| Файл | Мова |
 | --- | --- |
 | [CodeSensei-NEXT-UK.pdf](CodeSensei-NEXT-UK.pdf) | Українська |
 | [CodeSensei-NEXT-EN.pdf](CodeSensei-NEXT-EN.pdf) | English |
 
-Lab photos: `lab/`. Live `/paste` capture: `paste-demo.png`.
+Фото лабораторії MetaLab: `lab/`. Знімок живої форми `/paste`: `paste-demo.png`.  
+Тімлід на слайдах команди: Ільєнко Денис.

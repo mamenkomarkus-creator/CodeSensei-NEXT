@@ -1,13 +1,14 @@
-# Чекліст перед здачею
+# Чекліст здачі
 
-- [x] Номінація II (інтерактивний ШІ-застосунок)
+- [x] Номінація II — інтерактивний ШІ-застосунок
+- [x] Тімлід — Ільєнко Денис; п’ятеро учасників і ролі узгоджені скрізь
 - [x] Публічний репозиторій https://github.com/mamenkomarkus-creator/CodeSensei-NEXT
-- [x] П’ятеро учасників і ролі з проєктної теорії
-- [x] Презентація на шаблоні NEXT, PDF UK + EN
-- [x] Префаб `client/CodeSensei.unitypackage` + скрипти UdonSharp
-- [x] .NET-проксі, Clean Architecture, Gemini (аналог OpenAI API)
-- [x] GET-only контракт VRChat (`VRCStringDownloader`)
-- [x] Живий хост `/paste` і `/health`
-- [x] Тести `dotnet test` (NUnit, AAA)
+- [x] Презентації NEXT, PDF українською та англійською
+- [x] Документація: ідея, архітектура, API, інтеграція, демо
+- [x] Префаб `client/CodeSensei.unitypackage` і скрипти UdonSharp
+- [x] .NET-проксі, Clean Architecture, Gemini
+- [x] GET-only контракт VRChat
+- [x] Живі `/paste` і `/health`
+- [x] `dotnet test` — 36 тестів NUnit
 - [ ] Імпорт префаба в Unity MetaLab (учасник зі SDK)
 - [ ] Прогін у живому світі VRChat

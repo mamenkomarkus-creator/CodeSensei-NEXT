@@ -1,15 +1,36 @@
-# Concept / Ідея проєкту
+# Ідея проєкту / Project concept
 
-**Nomination II.** Full title: CodeSensei — Interactive AI Mentor for a Metaverse Laboratory.
+**CodeSensei: Інтерактивний AI-ментор для Metaverse-лабораторії**  
+Номінація II · інтерактивний ШІ-застосунок · Erasmus+ NEXT-Study Metaverse
+
+Тімлід: Ільєнко Денис. Університет: КПІ ім. Ігоря Сікорського.
+
+## Проблема
+
+Під час дистанційної практики в VR-лабораторії студент лишається без миттєвого зворотного зв’язку. Викладач не може стояти біля кожного термінала. Саме цю прогалину закриває CodeSensei.
+
+## Ідея
+
+ШІ-асистент у вигляді NPC біля віртуального термінала в лабораторії кафедри (MetaLab) на VRChat. Студент отримує:
+
+- пояснення концепцій об’єктно-орієнтованого програмування (24 пресети);
+- допомогу в написанні коду;
+- живе рев’ю фрагмента безпосередньо в VR.
+
+Ефект — присутність викладача-консультанта в тій самій залі, що й група.
+
+## Мета
+
+1. Клієнтський інтерфейс мовою C# (UdonSharp) усередині VRChat.
+2. Надійний .NET-бекенд: захищений проксі до LLM, ключі не потрапляють у гру.
+3. Інтеграція асистента в MetaLab для якіснішого дистанційного навчання.
+4. Архітектура Clean Architecture + DDD, щоб змінювати LLM-провайдера без переписування світу.
+5. Готовий Unity-пакет, який імпортує будь-яка команда NEXT.
+
+## Результат
+
+Функціональний ШІ-застосунок номінації II: префаб `client/CodeSensei.unitypackage`, живий API на Render, документація та дві презентації на офіційному шаблоні NEXT.
 
 ## English
 
-CodeSensei is an AI assistant shaped as an NPC for the department’s virtual laboratory (MetaLab) on VRChat in the Erasmus+ NEXT-Study metaverse. The problem it solves is the lack of instant mentor feedback while students practice remotely. At a virtual terminal they get OOP explanations, help writing code, and a review of a snippet without leaving VR.
-
-The client is C# / UdonSharp (VRChat SDK3): UI terminal, input, asynchronous GET requests. The backend is .NET with Clean Architecture: a protected proxy that builds system prompts, calls Google Gemini (the LLM analog of the planned OpenAI API) and returns VR-sized lines — API keys never enter the game client. Because Udon cannot POST, a live review uses a five-character ticket, the public /paste page, and a GET inbox the prefab already polls. NUnit covers the domain. The deliverable is `client/CodeSensei.unitypackage`, ready to drop into MetaLab or another NEXT world.
-
-## Українською
-
-CodeSensei — ШІ-асистент у вигляді NPC для віртуальної навчальної лабораторії кафедри (MetaLab) на VRChat у метавсесвіті Erasmus+ NEXT-Study. Проблема: немає миттєвого зворотного зв’язку ментора під час самостійної практики на дистанції. Біля віртуального термінала студент отримує пояснення ООП, допомогу в коді та рев’ю фрагмента, не виходячи з VR.
-
-Клієнт — C# / UdonSharp (VRChat SDK3): UI-термінал, введення, асинхронні GET-запити. Бекенд — .NET за Clean Architecture: захищений проксі формує системні промпти, звертається до Google Gemini (аналог запланованого OpenAI API) і повертає рядки під VR-екран; ключі не потрапляють у клієнт гри. Udon не вміє POST, тому живе рев’ю йде через квиток з 5 символів, сторінку /paste і GET-inbox, який уже опитує префаб. Домен покрито NUnit. Результат — `client/CodeSensei.unitypackage` для MetaLab або іншого світу NEXT.
+CodeSensei is an NPC-style AI mentor in the department MetaLab on VRChat (Erasmus+ NEXT). It answers the lack of instant feedback during remote OOP practice: 24 topic presets, live snippet review, and a shared VR screen. The UdonSharp client talks GET-only to a Clean Architecture .NET proxy; Google Gemini stays behind the server. Team lead: Denys Ilienko. Deliverable: a drop-in Unity package for MetaLab and other NEXT worlds.

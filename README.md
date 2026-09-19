@@ -1,38 +1,45 @@
 # CodeSensei
 
-**Посилання на здачу:** https://github.com/mamenkomarkus-creator/CodeSensei-NEXT
+Інтерактивний AI-ментор для Metaverse-лабораторії.
 
-**Номінація II** — інтерактивний ШІ-застосунок: AI-ментор CodeSensei для віртуальної лабораторії кафедри (MetaLab) у VRChat / NEXT-Study.
+**Номінація II** · Erasmus+ NEXT Student Creative Project Competition  
+КПІ ім. Ігоря Сікорського · команда CodeSensei  
+Тімлід: **Ільєнко Денис**
 
-| | |
+https://github.com/mamenkomarkus-creator/CodeSensei-NEXT
+
+---
+
+CodeSensei — це ШІ-асистент біля віртуального термінала в лабораторії кафедри (MetaLab) на VRChat. Студент отримує пояснення ООП, допомогу в коді та живе рев’ю, не виходячи з метавсесвіту NEXT-Study. Ключі LLM лишаються на сервері; клієнт VRChat працює лише через GET.
+
+| Документ | |
 | --- | --- |
-| Презентація UK | [docs/presentation/CodeSensei-NEXT-UK.pdf](docs/presentation/CodeSensei-NEXT-UK.pdf) |
-| Презентація EN | [docs/presentation/CodeSensei-NEXT-EN.pdf](docs/presentation/CodeSensei-NEXT-EN.pdf) |
-| Як здавати пакет | [docs/SUBMISSION.md](docs/SUBMISSION.md) · [EN](docs/SUBMISSION.en.md) |
-| Чекліст | [docs/CHECKLIST.md](docs/CHECKLIST.md) |
+| Карта документації | [docs/README.md](docs/README.md) |
+| Презентація українською | [docs/presentation/CodeSensei-NEXT-UK.pdf](docs/presentation/CodeSensei-NEXT-UK.pdf) |
+| Презентація англійською | [docs/presentation/CodeSensei-NEXT-EN.pdf](docs/presentation/CodeSensei-NEXT-EN.pdf) |
 | Ідея та мета | [docs/CONCEPT.md](docs/CONCEPT.md) |
-| Інтеграція VRChat / MetaLab | [docs/NEXT-INTEGRATION.md](docs/NEXT-INTEGRATION.md) · [EN](docs/NEXT-INTEGRATION.en.md) |
-| API | [docs/api.md](docs/api.md) · [EN](docs/api.en.md) |
-| Демо | https://codesensei-d5zi.onrender.com/paste |
-| Health | https://codesensei-d5zi.onrender.com/health |
+| Інтеграція в VRChat / MetaLab | [docs/NEXT-INTEGRATION.md](docs/NEXT-INTEGRATION.md) |
+| Контракт API | [docs/api.md](docs/api.md) |
+| Живе демо | https://codesensei-d5zi.onrender.com/paste |
+| Стан сервісу | https://codesensei-d5zi.onrender.com/health |
 
 ## Команда
 
 | Учасник | Роль |
 | --- | --- |
-| Маменко Марк / Mark Mamenko | Backend / Team Lead |
+| **Ільєнко Денис** / Denys Ilienko | Team Lead · AI & Prompt Engineer |
+| Маменко Марк / Mark Mamenko | Backend |
 | Павленко Святослав / Sviatoslav Pavlenko | UdonSharp Developer |
-| Ільєнко Денис / Denys Ilienko | AI / Prompt Engineer |
 | Шозда Катерина / Kateryna Shozda | QA / C# Tester |
 | Пошитнюк Дмитро / Dmytro Poshytyniuk | Integration / VR Tester |
 
 ## English
 
-Submission URL: https://github.com/mamenkomarkus-creator/CodeSensei-NEXT
+**Nomination II** — interactive AI application for the NEXT-Study Metaverse. An NPC-style OOP mentor in the department MetaLab on VRChat. Team lead: **Denys Ilienko**.
 
-**Nomination II** — interactive AI application: an NPC-style OOP mentor in the department MetaLab on VRChat. Official NEXT-template PDFs (UK + EN) in `docs/presentation/`.
+Presentations (official NEXT template): Ukrainian and English PDFs in `docs/presentation/`. Documentation index: `docs/README.md`.
 
-Compat: Unity, VRChat SDK3, UdonSharp, GET-only `VRCStringDownloader`, HTTPS, Allow Untrusted URLs.
+Compatible with Unity, VRChat SDK3, UdonSharp, GET-only `VRCStringDownloader`, HTTPS, and **Allow Untrusted URLs**.
 
 ```bash
 cp .env.example .env   # set Gemini__ApiKey
